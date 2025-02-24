@@ -56,7 +56,7 @@ public class MyTelegramBot extends TelegramLongPollingBot {
             try {
                 execute(message);
             } catch (TelegramApiException e){
-                e.printStackTrace();
+                System.out.println(System.err);
             }
 
         }
@@ -64,12 +64,12 @@ public class MyTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "araaasharebot";
+        return "Username Telegram Bot Disini";
     }
 
     @Override
     public String getBotToken() {
-        return "7296211811:AAEJZzpmNqywhHfL8UO7F5NShJVs_1mq8Dg";
+        return "Telegram Bot Token Disini";
     }
 
     public static List<String> parseMessageAndCommand(String message) {
